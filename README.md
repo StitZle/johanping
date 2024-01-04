@@ -7,26 +7,25 @@ For Docker Desktop on Windows --> https://docs.docker.com/desktop/install/window
 
 After that follow these steps:
 1. Start Docker Desktop
-2. Clone this Git Repo
-3. 
+2. Install git (easiest way is to install gitbash https://git-scm.com/downloads)
+3. Clone this Git Repo https://github.com/StitZle/johanping (`git clone https://github.com/StitZle/johanping.git`)
+4. CD into source directory and execute Docker Compose Script. It will set everything up for you (niceee) \
+   `$ cd johanping/` && $ `docker compose up -d`
+
+## Usage
+To view the website go to http://localhost:8080/
+Website will work on Mobile (If you make the url available in your Home Network ...)
+
+- Create Devices to Ping
+- Delete Devices
+- See Device Ping History
+- Backend will automatically Ping all Devices every 10 minutes (timeout is 3s per Ping)
+- Failed Ping Counter will reset on first successful ping
 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Screenshots
+![img.png](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
