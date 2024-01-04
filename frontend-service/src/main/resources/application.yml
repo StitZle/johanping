@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: johanping
+  data:
+    mongodb:
+      host: mongo
+      database: johanping-db
+      port: 27017
+
+server:
+  port: 9090
+  servlet:
+    context-path: /frontend-service/rest
+
+ping:
+  timeout: 3000

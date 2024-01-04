@@ -1,0 +1,39 @@
+{
+  "common.button.save": "Speichern",
+  "common.button.cancel": "Abbrechen",
+  "common.button.delete": "Löschen",
+  "common.button.styling.dark-mode": "Dunkler Modus",
+  "common.button.styling.light-mode": "Heller Modus",
+
+
+
+  "common.button.navigation.dashboard": "Dashboard",
+  "common.button.navigation.devices": "Geräte",
+
+
+  "common.validation.required": "Das Feld darf nicht leer sein",
+  "common.validation.email": "Das Feld muss eine valide E-Mail enthalten",
+
+  "common.notifications.save.success": "Speichern erfolgreich",
+  "common.notifications.save.error": "Speichern nicht erfolgreich",
+  "common.notifications.delete.success": "Löschen erfolgreich",
+  "common.notifications.delete.error": "Löschen nicht erfolgreich",
+
+  "device.label.name": "Gerätename",
+  "device.label.address": "IP-Adresse",
+  "device.headline": "Geräteübersicht",
+  "device.button.create": "Neues Gerät anlegen",
+  "device.delete.headline": "Gerät löschen",
+  "device.delete.info.headline": "Möchtest Du das Gerät wirklich löschen?",
+  "device.delete.info.text": "Das Gerät wird endgültig gelöscht. Dieses kann nicht wiederhergestellt werden. Wenn Du dieses Gerät zu einem späteren Zeitpunkt wiederherstellen möchtest, musst Du es neu erstellen.",
+
+  "device.view.info.headline": "Keine Daten verfügbar",
+  "device.view.info.text": "In den letzten 30 Tagen war das Gerät immer erreichbar.",
+
+  "device.drawer.create.headline": "Gerät erstellen",
+  "device.drawer.view.headline": "Failed Pings Übersicht",
+  "device.create.message.success": "Gerät wurde erfolgreich angelegt",
+  "device.create.message.error": "Gerät konnte nicht angelegt werden",
+  "device.delete.message.success": "Gerät wurde gelöscht",
+  "device.delete.message.error": "Gerät konnte nicht gelöscht werden"
+}

@@ -1,0 +1,23 @@
+.action-cell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+
+  :first-child {
+    position: relative;
+
+    &:before {
+      content: "";
+      border-left: 2px solid grey;
+      height: 40px;
+      display: inline-block;
+      position: absolute;
+      left: -14px;
+    }
+  }
+}
+
+.action-button {
+  margin-right: 10px;
+}

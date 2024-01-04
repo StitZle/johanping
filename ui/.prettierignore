@@ -1,0 +1,11 @@
+# Ignore artifacts:
+.idea
+build
+deployment
+node_modules
+reports
+src/translations
+README.md
+package-lock.json
+.eslintrc.json
+dist

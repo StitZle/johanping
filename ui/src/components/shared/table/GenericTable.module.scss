@@ -1,0 +1,100 @@
+@import "../../../styles/variables";
+
+.table-wrapper {
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+
+  table {
+    width: 100%;
+
+    thead {
+      tr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: $size-l;
+        text-align: left;
+      }
+
+      th {
+        position: relative;
+        flex: 1;
+        padding-left: $size-m;
+
+        > span {
+          color: blue;
+          font-weight: 500;
+          padding-left: 32px; //dont know what this does
+          cursor: pointer;
+        }
+
+        //does not work
+        .active-sort {
+          &:before {
+            font-size: 64px - 1;
+            position: absolute;
+            left: 8px;
+            color: blue;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        color: black;
+        background-color: #f1f1f4; //default column color
+        min-height: $size-l;
+        border-radius: 8px;
+
+        margin-bottom: 16px;
+
+        width: 100%;
+
+        transition:
+          box-shadow 0.4s,
+          color 0.1s;
+
+        &:hover,
+        &:focus-within {
+          background-color: light-dark(#a0a0a0, #a0a0a0); //hover color
+          box-shadow: #a0a0a0;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      tr:active,
+      .selected-row {
+        outline: 2px solid #e22732;
+      }
+
+      .row-cursor-pointer {
+        cursor: pointer;
+      }
+
+      td {
+        display: inline-flex;
+        align-items: center;
+        flex: 1;
+        max-height: 128px + 2;
+        padding-left: $size-m;
+        height: 100%;
+        align-self: center;
+
+        :global(.uli-link) + :global(.uli-link) {
+          //icon
+          margin-left: $size-m;
+        }
+      }
+    }
+  }
+}

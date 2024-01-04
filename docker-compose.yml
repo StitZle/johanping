@@ -1,0 +1,38 @@
+services:
+
+  database:
+    image: mongo:4.4.17
+    hostname: mongo
+    networks:
+      - johanping-network
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_DATABASE: johanping-db
+    volumes:
+      - /srv/mongodb/data:/data/db
+
+  backend:
+    build:
+      context: frontend-service
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - 9090:9090
+    networks:
+      - johanping-network
+    depends_on:
+      - database
+
+  frontend:
+    build:
+      context: ui
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+    depends_on:
+      - backend
+
+networks:
+  johanping-network:
